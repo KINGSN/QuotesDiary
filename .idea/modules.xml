@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BoxedVerticalSeekBar/BoxedVerticalSeekBar.iml" filepath="$PROJECT_DIR$/.idea/modules/BoxedVerticalSeekBar/BoxedVerticalSeekBar.iml" group="QuotesDiary/BoxedVerticalSeekBar" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/QuotesDiary.iml" filepath="$PROJECT_DIR$/.idea/QuotesDiary.iml" group="QuotesDiary" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="QuotesDiary/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/checkbox/checkbox.iml" filepath="$PROJECT_DIR$/.idea/modules/checkbox/checkbox.iml" group="QuotesDiary/checkbox" />
+    </modules>
+  </component>
+</project>
