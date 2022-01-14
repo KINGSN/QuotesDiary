@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.royal.attitude.status.UploadQuotes">
+
+    <com.royal.attitude.status.utils.StatusBarView
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_grt_status_bar"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_grt_toolbar"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_below="@+id/statusBar"
+        android:elevation="0dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_fav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_grt_toolbar"
+        android:orientation="horizontal"
+        android:layout_below="@+id/toolbar_upload">
+
+        <TextView
+            android:id="@+id/tv_tab_image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_tab_cat_selected"
+            android:fontFamily="@font/font_semi_bold"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingTop="8dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="8dp"
+            android:text="@string/image"
+            android:textColor="@color/gradient_color_1" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/line" />
+
+        <TextView
+            android:id="@+id/tv_tab_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_tab_cat_unselected"
+            android:fontFamily="@font/font_semi_bold"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingTop="8dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="8dp"
+            android:text="@string/text"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_below_toolbar"
+        android:layout_below="@+id/toolbar_upload"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager_uploads"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_fav"/>
+
+</RelativeLayout>

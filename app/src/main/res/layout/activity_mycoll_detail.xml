@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.royal.attitude.status.utils.StatusBarView
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_grt_status_bar"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_mycoll_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_grt_toolbar"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:elevation="5dp"
+        android:layout_below="@+id/statusBar"/>
+
+    <com.royal.attitude.status.utils.ExtendedViewPager
+        android:id="@+id/vp_mycoll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_mycoll_details"/>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/floating_menu_mycoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:menu_colorNormal="@color/fab_menu"
+        app:menu_labels_colorNormal="@color/btn_fab_labels_color"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/button_mycoll_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/fab_button"
+            android:src="@mipmap/delete"
+            app:fab_size="mini"
+            app:fab_label="Delete" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/button_mycoll_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/fab_button"
+            android:src="@mipmap/share_white"
+            app:fab_size="mini"
+            app:fab_label="Share Image" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/button_mycoll_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/fab_button"
+            android:src="@mipmap/upload"
+            app:fab_size="mini"
+            app:fab_label="Upload"
+            android:tint="@color/colorPrimary"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/button_mycoll_setas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/fab_button"
+            android:src="@mipmap/setwall"
+            app:fab_size="mini"
+            app:fab_label="Set As Wallpaper" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>

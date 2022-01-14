@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="5dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_by_cat"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:adjustViewBounds="true"
+        app:riv_corner_radius="5dp" />
+
+    <ImageView
+        android:id="@+id/iv_img_status"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/ic_approved"
+        android:layout_margin="5dp"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/pb_image_by_cat"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/gradient_color_1" tools:targetApi="lollipop"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_blackgradient"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="7dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/ic_like_grey_hover"
+            android:contentDescription="@string/image"/>
+
+        <TextView
+            android:id="@+id/tv_img_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/font_light"/>
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/ic_view"
+            android:contentDescription="@string/image"/>
+
+        <TextView
+            android:id="@+id/tv_img_views"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/font_light"/>
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/ic_download_orange"
+            android:contentDescription="@string/image"/>
+
+        <TextView
+            android:id="@+id/tv_img_downloads"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:fontFamily="@font/font_light"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

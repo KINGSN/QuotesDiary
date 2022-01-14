@@ -1,0 +1,83 @@
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        applicationId "com.royal.attitude.status"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 2
+        versionName "2.0"
+
+        manifestPlaceholders = [onesignal_app_id : "65d078a3-c38d-4ff9-bcd7-b9cbfe44fe37",
+                                // Project number pulled from dashboard, local value is ignored.
+                                onesignal_google_project_number: "REMOTE"]
+
+        multiDexEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildTypes.each {
+        it.buildConfigField 'String','SERVER_URL',SERVER_URL
+        it.buildConfigField 'String','API_KEY',API_KEY
+        it.buildConfigField 'String','ENC_KEY',ENC_KEY
+        it.buildConfigField 'String','IV',IV
+    }
+    dexOptions {
+        javaMaxHeapSize "4G"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    implementation project(path: ':checkbox')
+    implementation project(path: ':BoxedVerticalSeekBar')
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.palette:palette:1.0.0'
+    implementation 'com.google.android.gms:play-services-auth:19.2.0'
+    implementation 'com.google.android.gms:play-services-ads:20.4.0'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.firebase:firebase-core:20.0.0'
+    implementation 'com.facebook.android:facebook-android-sdk:12.1.0'
+    implementation 'com.google.ads.mediation:facebook:6.8.0.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+    implementation 'commons-io:commons-io:2.6'
+    implementation 'com.google.android.ads.consent:consent-library:1.0.8'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.github.clans:fab:1.6.4'
+    implementation 'com.onesignal:OneSignal:3.15.4'
+    implementation 'com.github.castorflex.smoothprogressbar:library-circular:1.3.0'
+    implementation 'com.romandanylyk:pageindicatorview:1.0.1@aar'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+    implementation 'com.yakivmospan:scytale:1.0.1'
+    implementation 'com.jaredrummler:colorpicker:1.1.0'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+}

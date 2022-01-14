@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_edit_text_color"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@color/colorPrimary"
+        app:riv_corner_radius="15dp"
+        app:riv_border_width="1.5dp"
+        app:riv_border_color="@color/whiteAA"/>
+
+</LinearLayout>

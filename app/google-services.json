@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "713989955981",
+    "project_id": "royalstatus-65230",
+    "storage_bucket": "royalstatus-65230.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713989955981:android:330380f2deb360015fddc4",
+        "android_client_info": {
+          "package_name": "com.royal.attitude.status"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "713989955981-1s4vhna0a37pq2a0euras13r3tde0cqs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPvrwEhU0gwO0-ZXzrlnSay0FUi4C9QEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "713989955981-1s4vhna0a37pq2a0euras13r3tde0cqs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
