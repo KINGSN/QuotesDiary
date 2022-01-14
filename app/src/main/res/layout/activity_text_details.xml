@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.royal.attitude.status.utils.StatusBarView
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_grt_status_bar"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_textDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_grt_toolbar"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_below="@+id/statusBar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg"
+        android:layout_below="@+id/toolbar_textDetails"
+        android:layout_above="@+id/ll_adView">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/floating_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:menu_colorNormal="@color/fab_menu"
+        app:menu_labels_colorNormal="@color/btn_fab_labels_color"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/ll_adView">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/button_likeDislike_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/fab_button"
+            android:src="@mipmap/fav"
+            app:fab_size="mini"
+            app:fab_label="Like (10)" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/button_share_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/fab_button"
+            android:src="@mipmap/share_white"
+            app:fab_size="mini"
+            app:fab_label="Share" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/button_copy_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/fab_button"
+            android:src="@mipmap/copy"
+            app:fab_size="mini"
+            app:fab_label="Copy Text" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/button_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/fab_button"
+            android:src="@mipmap/delete"
+            app:fab_size="mini"
+            app:fab_label="@string/delete"
+            android:visibility="gone"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/button_report_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/fab_button"
+            android:src="@mipmap/report"
+            app:fab_size="mini"
+            app:fab_label="@string/report" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <LinearLayout
+        android:id="@+id/ll_adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

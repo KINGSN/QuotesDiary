@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.royal.attitude.status.royal.attitude.status.royal.utils.StatusBarView
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_grt_status_bar"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_imageDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_grt_toolbar"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_below="@+id/statusBar"/>
+
+    <com.royal.attitude.status.royal.attitude.status.royal.utils.ExtendedViewPager
+        android:id="@+id/view_pager_extended"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_imageDetails"
+        android:layout_above="@+id/ll_adView" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/floating_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:menu_colorNormal="@color/fab_menu"
+        app:menu_labels_colorNormal="@color/btn_fab_labels_color"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/ll_adView"
+        app:menu_labels_position="right">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/button_likeDislike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/fab_button"
+            android:src="@mipmap/ic_like"
+            fab:fab_size="mini"
+            fab:fab_label="10" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/button_share_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/fab_button"
+            android:src="@mipmap/share_white"
+            fab:fab_size="mini"
+            fab:fab_label="@string/share" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/fab_button"
+            android:padding="6dp"
+            android:src="@mipmap/ic_download"
+            fab:fab_size="mini"
+            fab:fab_label="@string/save" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/button_setwall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/fab_button"
+            android:src="@mipmap/setwall"
+            fab:fab_size="mini"
+            fab:fab_label="@string/set_as_wallpaper" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/button_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/fab_button"
+            android:src="@mipmap/delete"
+            fab:fab_size="mini"
+            fab:fab_label="@string/delete"
+            android:visibility="gone"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/button_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/fab_button"
+            android:src="@mipmap/report"
+            fab:fab_size="mini"
+            fab:fab_label="@string/report" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <LinearLayout
+        android:id="@+id/ll_adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

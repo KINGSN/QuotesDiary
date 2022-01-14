@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f27121</color>
+    <color name="colorPrimaryDark">#031729</color>
+    <color name="colorAccent">#3C55D1</color>
+
+    <color name="primary">#f27121</color>
+    <color name="primaryDark">#e94057</color>
+
+    <color name="gradient_color_1">#f27121</color>
+    <color name="gradient_color_2">#e94057</color>
+
+    <color name="gradient_color_status_1">#CF5F1D</color>
+    <color name="gradient_color_status_2">#C53648</color>
+
+    <color name="text_black">#000000</color>
+    <color name="text_heading">#434343</color>
+    <color name="text_hint">#828282</color>
+    <color name="text_dark">#626262</color>
+
+    <color name="bg_option">#F7F7F7</color>
+
+    <color name="bg">#F8F9FB</color>
+
+    <color name="bg_about_item">#ffffff</color>
+    <color name="bg_options_quotes">#ffffff</color>
+    <color name="bg_nav">#F8F9FB</color>
+    <color name="bg_nav_selected">#F9F9F9</color>
+
+    <color name="white_night">#ffffff</color>
+    <color name="black_night">#000000</color>
+    <color name="line">#C7C7CC</color>
+    <color name="black90_night">#90000000</color>
+    <color name="white_30_night">#30ffffff</color>
+    <color name="line_grey_hori">#E5E5E5</color>
+
+    <color name="switch_track">#FFE3D1</color>
+    <color name="switch_track_disable">#D7D7D7</color>
+    <color name="switch_thumb_disable">#BBBBBB</color>
+    <color name="seekBar">#818B94</color>
+    <color name="line_below_toolbar">#70ffffff</color>
+
+    <color name="fab_menu">#f27121</color>
+    <color name="fab_button">#e94057</color>
+    <color name="btn_fab_labels_color">#90000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black80">#80000000</color>
+    <color name="black_aa">#AA000000</color>
+    <color name="black_cc">#CC000000</color>
+    <color name="quote_text">#232323</color>
+    <color name="white_30">#30ffffff</color>
+    <color name="white50">#50ffffff</color>
+
+    <color name="whiteAA">#AAFFFFFF</color>
+    <color name="black90">#90000000</color>
+    <color name="red">#ff0000</color>
+
+    <color name="vp_indicator">#E84057</color>
+    <color name="black30">#30000000</color>
+    <color name="border_font">#C6C8C7</color>
+
+    <integer-array name="pocket_bar_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+    </integer-array>
+
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
+
+
+    <color name="color1">#FBCEB1</color>
+    <color name="color2">#FFBF00</color>
+    <color name="color3">#9966CC</color>
+    <color name="color4">#000000</color>
+    <color name="color5">#7FFFD4</color>
+    <color name="color6">#007FFF</color>
+    <color name="color7">#89CFF0</color>
+    <color name="color8">#F5F5DC</color>
+    <color name="color9">#E52B50</color>
+    <color name="color10">#0000FF</color>
+    <color name="color11">#0095B6</color>
+    <color name="color12">#8A2BE2</color>
+    <color name="color13">#DE5D83</color>
+    <color name="color14">#CD7F32</color>
+    <color name="color15">#964B00</color>
+    <color name="color16">#800020</color>
+    <color name="color17">#702963</color>
+    <color name="color18">#960018</color>
+    <color name="color19">#DE3163</color>
+    <color name="color20">#007BA7</color>
+    <color name="color21">#F7E7CE</color>
+    <color name="color22">#7FFF00</color>
+    <color name="color23">#7B3F00</color>
+    <color name="color24">#0047AB</color>
+    <color name="color25">#6F4E37</color>
+    <color name="color26">#B87333</color>
+    <color name="color27">#F88379</color>
+    <color name="color28">#DC143C</color>
+    <color name="color29">#008000</color>
+    <color name="color30">#00FFFF</color>
+    <color name="color31">#EDC9Af</color>
+    <color name="color32">#7DF9FF</color>
+    <color name="color33">#50C878</color>
+    <color name="color34">#00FF3F</color>
+    <color name="color35">#FFD700</color>
+    <color name="color36">#808080</color>
+    <color name="color37">#3FFF00</color>
+    <color name="color38">#4B0082</color>
+    <color name="color39">#29AB87</color>
+    <color name="color40">#29AB87</color>
+
+    <color name="social_ggle">#ea4235</color>
+    <color name="social_fb">#3b5999</color>
+
+    <integer-array name="colorlist">
+        <item>@color/color1</item>
+        <item>@color/color2</item>
+        <item>@color/color3</item>
+        <item>@color/color4</item>
+        <item>@color/color5</item>
+        <item>@color/color6</item>
+        <item>@color/color7</item>
+        <item>@color/color8</item>
+        <item>@color/color9</item>
+        <item>@color/color10</item>
+        <item>@color/color11</item>
+        <item>@color/color12</item>
+        <item>@color/color13</item>
+        <item>@color/color14</item>
+        <item>@color/color15</item>
+        <item>@color/color16</item>
+        <item>@color/color17</item>
+        <item>@color/color18</item>
+        <item>@color/color19</item>
+        <item>@color/color20</item>
+        <item>@color/color21</item>
+        <item>@color/color22</item>
+        <item>@color/color23</item>
+        <item>@color/color24</item>
+        <item>@color/color25</item>
+        <item>@color/color26</item>
+        <item>@color/color27</item>
+        <item>@color/color28</item>
+        <item>@color/color29</item>
+        <item>@color/color30</item>
+        <item>@color/color31</item>
+        <item>@color/color32</item>
+        <item>@color/color33</item>
+        <item>@color/color34</item>
+        <item>@color/color35</item>
+        <item>@color/color36</item>
+        <item>@color/color37</item>
+        <item>@color/color38</item>
+        <item>@color/color39</item>
+        <item>@color/color40</item>
+    </integer-array>
+
+</resources>
